@@ -1,0 +1,18 @@
+<app-card>
+  <app-form
+    (getFormEvent)="handleFormEvent($event)"
+    [toggleLoading]="toggleLoading"
+  />
+</app-card>
+
+<app-card *ngIf="isLoading">
+  <p>Carregando... (fake delay de 2s)</p>
+</app-card>
+
+<app-card *ngIf="addressData">
+  <div class="content">
+    <p *ngFor="let item of addressData">
+      <strong> {{ item.label }}:</strong> {{ item.value }}
+    </p>
+  </div>
+</app-card>

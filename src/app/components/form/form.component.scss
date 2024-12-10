@@ -1,0 +1,32 @@
+:host {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  button {
+    border: none;
+    background-color: #f0fdec;
+    padding: 12px 32px;
+    border-radius: 6px;
+    color: #3f4a3c;
+    cursor: pointer;
+    transition: background-color 0.1s;
+
+    &:hover {
+      background-color: #d8e4d4;
+    }
+  }
+
+  input {
+    border: 1px solid #e1e1e1;
+    background-color: #f0fdec;
+    border-radius: 6px;
+    color: #3f4a3c;
+    padding: 12px;
+    outline: none;
+  }
+}

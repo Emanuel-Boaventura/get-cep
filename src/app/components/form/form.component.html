@@ -1,0 +1,15 @@
+<form (ngSubmit)="handleSubmit()">
+  <input
+    type="text"
+    [formControl]="cep"
+    placeholder="Insira o Cep"
+    (input)="onCepChange()"
+  />
+
+  <div *ngIf="cep.touched && cep.invalid">
+    <div *ngFor="let error of getFormControlErrors()">
+      <p *ngIf="error">{{ error }}</p>
+    </div>
+  </div>
+  <button type="submit">Buscar</button>
+</form>
