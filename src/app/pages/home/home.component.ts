@@ -5,6 +5,7 @@ import {
   AddressData,
   FormComponent,
 } from '../../components/form/form.component';
+import { LoaderComponent } from '../../components/loader/loader.component';
 
 interface AddressDataArray {
   label: string;
@@ -13,7 +14,7 @@ interface AddressDataArray {
 
 @Component({
   selector: 'app-home',
-  imports: [CardComponent, FormComponent, CommonModule],
+  imports: [CardComponent, FormComponent, CommonModule, LoaderComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

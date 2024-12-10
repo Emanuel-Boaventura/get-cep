@@ -53,7 +53,7 @@ export class FormComponent {
         return;
       }
 
-      await this.delay(2000);
+      await this.delay(500);
 
       const data = await this.cepService.getCep(this.cep.value!);
       console.log('data:', data);
