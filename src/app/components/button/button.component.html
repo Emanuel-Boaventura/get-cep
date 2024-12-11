@@ -1,0 +1,19 @@
+<a
+  *ngIf="href"
+  class="button"
+  [routerLink]="href"
+  [attr.target]="target"
+  [ngClass]="buttonClass"
+>
+  {{ text }}
+</a>
+
+<button
+  *ngIf="!href"
+  class="button"
+  type="type"
+  [ngClass]="buttonClass"
+  (click)="onClick($event)"
+>
+  {{ text }}
+</button>

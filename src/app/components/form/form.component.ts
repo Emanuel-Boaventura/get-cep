@@ -9,6 +9,7 @@ import {
 import { CepService } from '../../services/cep/cep.service';
 import { getErrors } from '../../utils/form-utils';
 import { cepMask } from '../../utils/masks';
+import { ButtonComponent } from '../button/button.component';
 
 export type AddressData = {
   cep: string;
@@ -28,7 +29,7 @@ export type AddressData = {
 
 @Component({
   selector: 'app-form',
-  imports: [FormsModule, ReactiveFormsModule, CommonModule],
+  imports: [FormsModule, ReactiveFormsModule, CommonModule, ButtonComponent],
   templateUrl: './form.component.html',
   styleUrl: './form.component.scss',
 })

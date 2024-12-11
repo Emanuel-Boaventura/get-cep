@@ -16,6 +16,7 @@
     <p><strong>bairro: </strong>{{ addressData.bairro }}</p>
     <p><strong>localidade: </strong>{{ addressData.localidade }}</p>
     <p><strong>uf: </strong>{{ addressData.uf }}</p>
-    <a [routerLink]="['/cep', addressData.cep]">Ver mais</a>
+
+    <app-button [href]="['/cep', addressData.cep]" text="Ver mais" />
   </div>
 </app-card>
