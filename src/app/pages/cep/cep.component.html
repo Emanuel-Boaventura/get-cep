@@ -1,0 +1,6 @@
+<app-card>
+  <h1>{{ cep }}</h1>
+  <p *ngFor="let item of addressData">
+    <strong> {{ item.label }}:</strong> {{ item.value }}
+  </p>
+</app-card>
