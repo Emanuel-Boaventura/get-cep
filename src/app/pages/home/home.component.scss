@@ -23,5 +23,22 @@
         font-weight: 400;
       }
     }
+
+    a {
+      border: none;
+      background-color: #f0fdec;
+      padding: 12px 32px;
+      border-radius: 6px;
+      color: #3f4a3c;
+      cursor: pointer;
+      transition: background-color 0.1s;
+      text-transform: none;
+      text-decoration: none;
+      text-align: center;
+
+      &:hover {
+        background-color: #d8e4d4;
+      }
+    }
   }
 }

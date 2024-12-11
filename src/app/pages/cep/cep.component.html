@@ -1,6 +1,10 @@
 <app-card>
-  <h1>{{ cep }}</h1>
-  <p *ngFor="let item of addressData">
-    <strong> {{ item.label }}:</strong> {{ item.value }}
-  </p>
+  <div class="content">
+    <h1>{{ cep }}</h1>
+    <p *ngFor="let item of cepData">
+      <strong> {{ item.label }}:</strong> {{ item.value }}
+    </p>
+
+    <a routerLink="/">Voltar</a>
+  </div>
 </app-card>

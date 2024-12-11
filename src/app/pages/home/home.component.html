@@ -11,8 +11,11 @@
 
 <app-card *ngIf="addressData">
   <div class="content">
-    <p *ngFor="let item of addressData">
-      <strong> {{ item.label }}:</strong> {{ item.value }}
-    </p>
+    <p><strong>cep: </strong>{{ addressData.cep }}</p>
+    <p><strong>logradouro: </strong>{{ addressData.logradouro }}</p>
+    <p><strong>bairro: </strong>{{ addressData.bairro }}</p>
+    <p><strong>localidade: </strong>{{ addressData.localidade }}</p>
+    <p><strong>uf: </strong>{{ addressData.uf }}</p>
+    <a [routerLink]="['/cep', addressData.cep]">Ver mais</a>
   </div>
 </app-card>

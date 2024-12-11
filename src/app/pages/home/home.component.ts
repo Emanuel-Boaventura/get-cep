@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { CardComponent } from '../../components/card/card.component';
 import {
   AddressData,
@@ -14,12 +15,18 @@ interface AddressDataArray {
 
 @Component({
   selector: 'app-home',
-  imports: [CardComponent, FormComponent, CommonModule, LoaderComponent],
+  imports: [
+    CardComponent,
+    FormComponent,
+    CommonModule,
+    LoaderComponent,
+    RouterLink,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-  addressData: AddressDataArray[] | null = null;
+  addressData: AddressData | null = null;
   isLoading = false;
 
   toggleLoading = (isLoading: boolean) => {
@@ -27,9 +34,6 @@ export class HomeComponent {
   };
 
   handleFormEvent(form: AddressData) {
-    this.addressData = Object.entries(form).map(([key, value]) => ({
-      label: key,
-      value: value || '...',
-    }));
+    this.addressData = form;
   }
 }
