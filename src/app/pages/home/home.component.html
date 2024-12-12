@@ -9,7 +9,7 @@
   <app-loader />
 </app-card>
 
-<app-card *ngIf="addressData">
+<app-card *ngIf="addressData && !isLoading">
   <div class="content">
     <p><strong>cep: </strong>{{ addressData.cep }}</p>
     <p><strong>logradouro: </strong>{{ addressData.logradouro }}</p>
