@@ -57,7 +57,6 @@ export class FormComponent {
       await this.delay(500);
 
       const data = await this.cepService.getCep(this.cep.value!);
-      console.log('data:', data);
       this.getFormEvent.emit(data);
     } catch (error) {
       console.error('Error:', error);

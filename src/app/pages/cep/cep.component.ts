@@ -34,7 +34,6 @@ export class CepComponent implements OnInit {
               }
           )
           .filter((item) => item);
-        console.log('this.cepData:', this.cepData);
       } catch (error) {
         console.error('Error fetching CEP:', error);
       }
