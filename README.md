@@ -4,6 +4,8 @@ This project was created with the aim of learning how web development works with
 
 ## How to use
 
+You can access [this link](https://get-cep.vercel.app/) to view the project already working on the internet or follow the steps below to download the repository and run it locally.
+
 ```bash
 # clone this repo and access its folder
 $ git clone https://github.com/Emanuel-Boaventura/get-cep.git && cd get-cep
