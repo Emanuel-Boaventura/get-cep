@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { ButtonComponent } from '../../components/button/button.component';
 import { CardComponent } from '../../components/card/card.component';
 import {
@@ -9,11 +8,6 @@ import {
 } from '../../components/form/form.component';
 import { LoaderComponent } from '../../components/loader/loader.component';
 
-interface AddressDataArray {
-  label: string;
-  value: string;
-}
-
 @Component({
   selector: 'app-home',
   imports: [
@@ -21,7 +15,6 @@ interface AddressDataArray {
     FormComponent,
     CommonModule,
     LoaderComponent,
-    RouterLink,
     ButtonComponent,
   ],
   templateUrl: './home.component.html',

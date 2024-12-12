@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { ButtonComponent } from '../../components/button/button.component';
 import { CardComponent } from '../../components/card/card.component';
 import { CepService } from '../../services/cep/cep.service';
 
 @Component({
   selector: 'app-cep',
-  imports: [CardComponent, CommonModule, RouterLink, ButtonComponent],
+  imports: [CardComponent, CommonModule, ButtonComponent],
   templateUrl: './cep.component.html',
   styleUrls: ['./cep.component.scss'],
 })
